@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Gravitas+One&family=Lilita+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Distressed&family=Shadows+Into+Light&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Htoo FASTFOOD</title>
+
+
+    <style>
+        header {
+
+            width: 100%;
+            align-items: center;
+            /* padding: 20px 100px; */
+            background-image: url(./hero-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            max-width: 100vw;
+        }
+
+        /* .icon a i {
+            color: white;
+            margin-right: 20px;
+        } */
+
+        .nav-link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-link:hover {
+            color: gold;
+        }
+
+        #button-link {
+            color: white;
+        }
+
+        #button-link:hover {
+            color: gold;
+        }
+
+        #button1 {
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 210, 0);
+        }
+
+        #button1:hover {
+            background-color: rgba(255, 217, 0, 0.442);
+            color: rgb(0, 0, 0);
+        }
+
+        .food-advertisement {
+            max-width: 30%;
+        }
+    </style>
+
+
+</head>
+<div class="d-flex justify-content-around mw-100 h-auto align-items-center text-white text-wrap pt-3 sticky-nav" style="padding: 20px; background-color: rgba(0, 0, 0, 0.595); color: black;">
+
+    <h2 class="fs-4 fs-md-3 fs-lg-2 fw-bold mb-0 fst-italic" style="color: rgb(255, 255, 255);">Htoo FASTFOOD</h2>
+
+    <ul class="list-unstyled d-md-flex m-auto d-none">
+
+        <li>
+            <a href="#home" class="me-5  fs-6 nav-link">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="#menu" class="me-5  fs-6 nav-link">
+                Menu
+            </a>
+        </li>
+        <li><a href="#about-us" class="me-5  fs-6 nav-link">
+                About
+            </a>
+        </li>
+        <li>
+            <a href="#book-table" class=" fs-6 nav-link">
+                BookTable
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="icon">
+
+        <a href="#" id="button-link"><i class="fa-solid fa-user fs-md-5 fs-sm-4  mx-lg-2 mx-sm-0"></i></a>
+        <a href="#" id="button-link"><i class="fa-solid fa-cart-shopping fs-md-5 fs-sm-4  mx-2">
+            </i></a>
+        <a href="#" id="button-link"><i class="fa-solid fa-magnifying-glass fs-md-5 fs-sm-4  mx-lg-2 mx-sm-0"></i></a>
+        <button id="button1" class=" rounded-pill border-0 fs-md-5 fs-sm-6 px-md-2 py-2 d-none d-lg-inline-block">Order
+            Online
+        </button>
+
+    </div>
+</div>
+
+<body class="w-100" style="height: fit-content;">
+    <header class="px-sm-5 p-lg-6" id="home">
+
+
+        <div
+            class="text-white min-vh-100 d-flex flex-column align-items-start justify-content-center text-left mx-5 food-advertisement">
+            <h1 class="text-nowrap"
+                style="font-size: 50px; font-family: Shadows Into Light; font-weight: 800; color: gold;">Htoo <br> Fast
+                Food Restaurant</h1>
+            <p class="text-wrap fs-5 fs-sm-6 my-4 fw-bold" style="font-family: monospace; color: bisque;">
+                We don't compromise on flavor. Enjoy hand-crafted burgers, crispy
+                fries, and fresh ingredients served piping hot.
+            </p>
+            <button id="button1"
+                class=" rounded-pill border-0 fs-md-5 fs-sm-6 px-md-3 px-3 py-2 d-lg-none d-md-inline-block justify-content-start">Order
+                Online
+            </button>
+
+        </div>
+    </header>
+
+    <div class="d-flex sale-page flex-lg-row">
+        <div class="sale-container-left d-flex flex-lg-row">
+            <img src="./o1.png" alt="Burger" class="img-fluid rounded-circle sale-photo">
+            <div class="sale-price d-flex flex-column justify-content-center align-items-start text-white">
+                <p class="display-lg-5"
+                    style="font-family: monospace; text-decoration: underline; text-underline-offset: 5px;">The Htoo
+                    Double Deluxe</p>
+                <h1 style="font-size: 30px;">20% Off</h1>
+                <button id="button1"
+                    class=" rounded-pill border-0 fs-md-5 fs-sm-6 px-md-3 px-3 py-2 justify-content-start">Order
+                    Online
+                </button>
+            </div>
+        </div>
+
+        <div class="sale-container-right d-flex flex-lg-row">
+            <img src="./o2.png" alt="Burger" class="img-fluid rounded-circle sale-photo">
+            <div class="sale-price d-flex flex-column justify-content-center align-items-start text-white">
+                <p class="display-lg-"
+                    style="font-family: monospace; text-decoration: underline; text-underline-offset: 5px;">The Htoo
+                    Artisan</p>
+                <h1 style="font-size: 30px;">30% Off</h1>
+                <button id="button1"
+                    class=" rounded-pill border-0 fs-md-5 fs-sm-6 px-md-3 px-3 py-2 justify-content-start">Order
+                    Online
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <h1 class="w-100 text-center my-3 py-3 fs-1"
+            style="font-size: 50px; font-family: Shadows Into Light; font-weight: 800; text-decoration: underline wavy; text-underline-offset: 10px;">
+            Our Menu
+        </h1>
+
+        <div class="container my-5">
+            <div class="row g-4 p-5">
+                <div class=" menu-item col-12 col-md-6 col-lg-4">
+                    <div class="menu-card h-100" style="background-color: rgb(31, 31, 31); border-radius: 20px;">
+                        <div class="w-100 text-center p-3"
+                            style="background-color: rgb(222, 222, 224); border-bottom-left-radius: 100px; height:250px;align-items: center; justify-content: center; display: flex;">
+                            <img src="./f1.png" alt="Food1" width="200px" class="menu-photo">
+                        </div>
+
+                        <div class="px-3 text-white py-4">
+                            <h4 class="fs-3 my-3 text-center">Seafood Pizza</h4>
+                            <p class="fs-6 lh-lg my-4"
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200; color: rgba(255, 255, 255, 0.751); color: rgba(255, 255, 255, 0.751);">
+                                A premium ocean-inspired pizza. It is loaded with a generous mix of shrimp, tender squid
+                                rings, and sweet crab sticks. The flavor is rich and savory with a hint of sweetness
+                                from the seafood and onions, all baked into a gooey layer of cheese.
+                            </p>
+                            <div class="d-flex justify-content-between my-4">
+                                <p>THB: 390 ฿ <br> MMK: 42,000 Ks <br> SGD: $16.0 0</p>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" menu-item col-12 col-md-6 col-lg-4">
+                    <div class="menu-card h-100" style="background-color: rgb(31, 31, 31); border-radius: 20px;">
+                        <div class="w-100 text-center p-3"
+                            style="background-color: rgb(222, 222, 224); border-bottom-left-radius: 100px; height:250px; align-items: center; justify-content: center; display: flex; ">
+                            <img src="./f2.png" alt="Food1" width="200px" class="menu-photo">
+                        </div>
+
+                        <div class="px-3 text-white py-4">
+                            <h4 class="fs-3 my-3 text-center">The Htoo Classic Cheeseburger</h4>
+                            <p class="fs-6 lh-lg my-4"
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200; color: rgba(255, 255, 255, 0.751);">
+                                The signature item. A juicy, flame-grilled beef patty seasoned to perfection, blanketed
+                                in melted cheddar cheese. It offers a satisfying contrast of textures: the soft sesame
+                                bun, hot savory meat, and the cool crunch of fresh lettuce, tomatoes, and red onions,
+                                all tied together with a classic ketchup and mayo blend.
+                            </p>
+                            <div class="d-flex justify-content-between my-4">
+                                <p>THB: 180 ฿ <br> MMK: 19,500 Ks <br> SGD: $8.00</p>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" menu-item col-12 col-md-6 col-lg-4">
+                    <div class="menu-card h-100" style="background-color: rgb(31, 31, 31); border-radius: 20px;">
+                        <div class="w-100 text-center p-3"
+                            style="background-color: rgb(222, 222, 224); border-bottom-left-radius: 100px; height:250px; align-items: center; justify-content: center; display: flex;">
+                            <img src="./f3.png" alt="Food1" width="200px" class="menu-photo">
+                        </div>
+
+                        <div class="px-3 text-white py-4">
+                            <h4 class="fs-3 my-3 text-center">The Basil & Olive Garden Pizza</h4>
+                            <p class="fs-6 lh-lg my-4"
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200; color: rgba(255, 255, 255, 0.751);">
+                                A vegetarian delight featuring a crispy golden crust topped with tangy tomato sauce and
+                                melted mozzarella. The flavor profile is earthy and fresh, combining the briny saltiness
+                                of black olives with the sweet crunch of red onions and the aromatic, peppery finish of
+                                fresh basil leaves.
+                            </p>
+                            <div class="d-flex justify-content-between my-4">
+                                <p>THB: 290 ฿ <br> MMK: 32,000 Ks <br> SGD: $12.50</p>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" menu-item col-12 col-md-6 col-lg-4">
+                    <div class="menu-card h-100" style="background-color: rgb(31, 31, 31); border-radius: 20px;">
+                        <div class="w-100 text-center p-3"
+                            style="background-color: rgb(222, 222, 224); border-bottom-left-radius: 100px; height:250px; align-items: center; justify-content: center; display: flex;">
+                            <img src="./f4.png" alt="Food1" width="200px" class="menu-photo">
+                        </div>
+
+                        <div class="px-3 text-white py-4">
+                            <h4 class="fs-3 my-3 text-center">Mediterranean Rotini Salad</h4>
+                            <p class="fs-6 lh-lg my-4"
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200; color: rgba(255, 255, 255, 0.751);">
+                                A light and refreshing side dish perfect for balancing a heavy meal. Al dente spiral
+                                pasta is tossed in a zesty Italian vinaigrette. The taste is bright and tangy, featuring
+                                bursts of sweetness from yellow and red bell peppers and a savory kick from sliced black
+                                and green olives.
+                            </p>
+                            <div class="d-flex justify-content-between my-4">
+                                <p>THB: 120 ฿ <br> MMK: 13,000 Ks <br> SGD: $5.50</p>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" menu-item col-12 col-md-6 col-lg-4">
+                    <div class="menu-card h-100" style="background-color: rgb(31, 31, 31); border-radius: 20px;">
+                        <div class="w-100 text-center p-3"
+                            style="background-color: rgb(222, 222, 224); border-bottom-left-radius: 100px; height:250px; align-items: center; justify-content: center; display: flex;">
+                            <img src="./f5.png" alt="Food1" width="200px" class="menu-photo">
+                        </div>
+
+                        <div class="px-3 text-white py-4">
+                            <h4 class="fs-3 my-3 text-center">Golden Sea-Salt Fries</h4>
+                            <p class="fs-6 lh-lg my-4"
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200; color: rgba(255, 255, 255, 0.751);">
+                                The perfect sidekick. These thick-cut classic fries are fried to a deep golden crisp on
+                                the outside while remaining fluffy and hot on the inside. Lightly tossed in sea salt for
+                                a simple, addictive taste.
+                            </p>
+                            <div class="d-flex justify-content-between my-4">
+                                <p>THB: 80 ฿ <br>MMK: 8,800 Ks <br> SGD: $3.50</p>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" menu-item col-12 col-md-6 col-lg-4">
+                    <div class="menu-card h-100" style="background-color: rgb(31, 31, 31); border-radius: 20px;">
+                        <div class="w-100 text-center p-3"
+                            style="background-color: rgb(222, 222, 224); border-bottom-left-radius: 100px; height:250px; align-items: center; justify-content: center; display: flex;">
+                            <img src="./f6.png" alt="Food1" width="200px" class="menu-photo">
+                        </div>
+
+                        <div class="px-3 text-white py-4">
+                            <h4 class="fs-3 my-3 text-center">The Four Seasons Feast</h4>
+                            <p class="fs-6 lh-lg my-4"
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200; color: rgba(255, 255, 255, 0.751);">
+                                Can't decide? Have it all. This premium pizza is divided into four unique quarters:
+                                savory Salami & Olive, rich Ham & Mushroom, fresh Seafood with Salmon, and a Veggie
+                                delight. It’s perfect for sharing or for those who want a different flavor in every
+                                slice.
+                            </p>
+                            <div class="d-flex justify-content-between my-4">
+                                <p>THB: 420 ฿ <br>MMK: 45,000 Ks <br> SGD: $17.50</p>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" menu-item col-12 col-md-6 col-lg-4">
+                    <div class="menu-card h-100" style="background-color: rgb(31, 31, 31); border-radius: 20px;">
+                        <div class="w-100 text-center p-3"
+                            style="background-color: rgb(222, 222, 224); border-bottom-left-radius: 100px; height:250px; align-items: center; justify-content: center; display: flex;">
+                            <img src="./f7.png" alt="Food1" width="200px" class="menu-photo">
+                        </div>
+
+                        <div class="px-3 text-white py-4">
+                            <h4 class="fs-3 my-3 text-center">Crispy Bacon & Chicken Stack</h4>
+                            <p class="fs-6 lh-lg my-4"
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200; color: rgba(255, 255, 255, 0.751);">
+                                The ultimate indulgence. A thick, golden-fried chicken fillet is stacked with crispy
+                                strips of smoked bacon and a slice of melted Swiss cheese. Drizzled with our secret
+                                house savory sauce and served on a brioche bun, every bite is a crunch-filled explosion
+                                of savory flavors.
+                            </p>
+                            <div class="d-flex justify-content-between my-4">
+                                <p>THB: 220 ฿ <br>MMK: 24,000 Ks <br> SGD: $9.50</p>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" menu-item col-12 col-md-6 col-lg-4">
+                    <div class="menu-card h-100" style="background-color: rgb(31, 31, 31); border-radius: 20px;">
+                        <div class="w-100 text-center p-3"
+                            style="background-color: rgb(222, 222, 224); border-bottom-left-radius: 100px; height:250px; align-items: center; justify-content: center; display: flex;">
+                            <img src="./f8.png" alt="Food1" width="200px" class="menu-photo">
+                        </div>
+
+                        <div class="px-3 text-white py-4">
+                            <h4 class="fs-3 my-3 text-center">The Healthy Grill Chicken Burger</h4>
+                            <p class="fs-6 lh-lg my-4"
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200; color: rgba(255, 255, 255, 0.751);">
+                                A lighter, healthier option without sacrificing flavor. A tender, flame-grilled chicken
+                                breast is served on a toasted whole-wheat bun. It’s topped with crisp lettuce, ripe
+                                tomato slices, and crinkle-cut pickles for a tangy crunch that perfectly complements the
+                                smoky chicken.
+                            </p>
+                            <div class="d-flex justify-content-between my-4">
+                                <p>THB: 160 ฿ <br>MMK: 17,500 Ks <br> SGD: $6.50</p>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" menu-item col-12 col-md-6 col-lg-4">
+                    <div class="menu-card h-100" style="background-color: rgb(31, 31, 31); border-radius: 20px;">
+                        <div class="w-100 text-center p-3"
+                            style="background-color: rgb(222, 222, 224); border-bottom-left-radius: 100px; height:250px; align-items: center; justify-content: center; display: flex;">
+                            <img src="./f9.png" alt="Food1" width="200px" class="menu-photo">
+                        </div>
+
+                        <div class="px-3 text-white py-4">
+                            <h4 class="fs-3 my-3 text-center">Cheesy Baked Fusilli Bolognese</h4>
+                            <p class="fs-6 lh-lg my-4"
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200; color: rgba(255, 255, 255, 0.751);">
+                                Comfort food at its best. Spiral fusilli pasta is coated in a rich, slow-simmered meat
+                                and tomato bolognese sauce. It is then topped with a generous layer of mozzarella and
+                                parmesan cheese and baked until bubbling and golden brown.
+                            </p>
+                            <div class="d-flex justify-content-between my-4">
+                                <p>THB: 180 ฿ <br>MMK: 19,500 Ks <br> SGD: $7.50</p>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about-us"
+            class="about-us h-100 d-flex flex-lg-row flex-column align-items-center justify-content-center"
+            style="padding: 50px;">
+            <img src="./about-img.png" alt="about-us" class="about-us-image">
+            <div class="about-us-t-container text-white" style="margin-left: 50px;">
+                <h1
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 200;  text-decoration: underline wavy; text-underline-offset: 10px; margin-bottom: 30px;">
+                    About Us</h1>
+                <p style="line-height: 30px;" class="lead">At Htoo Fast Food, we’re all about good food and good vibes
+                    🍔🔥
+
+                    We started Htoo Fast Food because we love food that’s fast, tasty, and made right. No shortcuts, no
+                    boring flavors — just juicy burgers, crispy fries, and meals that hit the spot every time.
+
+                    Whether you’re grabbing a quick lunch, hanging out with friends, or craving comfort food late in the
+                    day, we’ve got you covered. We keep things simple: fresh ingredients, big flavors, and food you’ll
+                    come back for.
+
+                    Thanks for choosing Htoo Fast Food — let’s eat and enjoy! 😋
+                </p>
+            </div>
+        </div>
+
+        <div id="book-table" class="booking-container text-black">
+            <div class="container">
+                <h1 class="my-5"
+                    style="font-family: shadows into light; font-weight: 500; text-align: center; border-bottom: 3px dashed black;">
+                    Book A Table
+                </h1>
+                <div class="form-container p-4 d-flex flex-lg-row flex-row w-lg-50 w-100">
+                    <div class="left-form w-100 w-lg-50">
+                        <div class="row-md-6 mb-3">
+                            <label class="form-label my-1 text-uppercase"
+                                style="font-weight: 500; font-size: larger; ">Your
+                                Name</label>
+                            <input type="text" class="form-control" style="padding: 15px 10px; border: 1px solid black;"
+                                placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="row-md-6 mb-3">
+                            <label class="form-label my-1 text-uppercase"
+                                style="font-weight: 500; font-size: larger;">Your
+                                Phone Number</label>
+                            <input type="tel" class="form-control" style="padding: 15px 10px; border: 1px solid black;"
+                                placeholder="Enter your number" required>
+                        </div>
+
+                        <div class="row-md-6 mb-3">
+                            <label class="form-label my-1 text-uppercase"
+                                style="font-weight: 500; font-size: larger;">Your
+                                Email</label>
+                            <input type="email" class="form-control"
+                                style="padding: 15px 10px; border: 1px solid black;" placeholder="Enter your email"
+                                required>
+                        </div>
+
+                        <div class="row-md-6 mb-3">
+                            <label class="form-label my-1 text-uppercase" style="font-weight: 500; font-size: larger;">
+                                How many person
+                            </label>
+                            <select class="form-select" style="padding: 15px 10px; border: 1px solid black;" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="row-md-6 mb-3">
+                            <label class="form-label my-1 text-uppercase"
+                                style="font-weight: 500; font-size: larger;">booking Date</label>
+                            <input type="date" class="form-control" style="padding: 15px 10px; border: 1px solid black;"
+                                placeholder="Enter your name" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-warning w-100 rounded-pill">Submit</button>
+                    </div>
+                    <div class="right-form d-lg-flex d-none  justify-content-center align-items-center">
+                        <img src="./main-branches.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-branches container">
+        <h1 class=""
+            style="color:black; font-family: shadows into light; font-weight: 500; text-align: center; border-bottom: 3px dashed black;">
+            Our Branches</h1>
+
+        <div class="row justify-content-center gap-3" style="width: 100%; height: fit-content;">
+            <div class="location-card  col-12 col-md-8 col-lg-6">
+                <img src="./branches1.png" alt="" class="img-fluid"
+                    style="margin-bottom: 50px; border-radius: 20px;">
+                <div>
+                    <p style="font-weight: 500; border-bottom: 1px solid rgb(0, 0, 0); padding-bottom: 10px; color: black;"
+                        class="fs-6 fs-md-4 fs-sm-2 text-uppercase">Htoo Burger Downtown – Junction City</p>
+                    <p class="">Location: Unit G-04 (Ground Floor), Jewelry Mall, Time City Complex, No. 37, Corner of
+                        Hantharwaddy Road & Kyun Taw Road, Kamayut Township, Yangon, Myanmar. <br><br>
+                        <i>Phone: +95 9 977 888 555 (VIP Reservations & Delivery)</i>
+                    </p>
+                    <p style="color: gray;">Prime Spot: Conveniently located near the main entrance of the Jewelry Mall,
+                        ensuring easy access and a prestigious address.
+
+                        Exclusive Menu: Features our full range of premium wagyu burgers and signature sides, served
+                        with silver-service attention.
+
+                        Modern Comfort: High-speed Wi-Fi, wireless charging stations at every table, and a
+                        climate-controlled environment that offers a cool escape from the city heat.</p>
+                </div>
+            </div>
+
+            <div class="location-card  col-12 col-md-8 col-lg-6">
+                <img src="./branches 2.png" alt="" class="img-fluid"
+                    style="margin-bottom: 50px; border-radius: 20px;" width="100%">
+                <div>
+                    <p style="font-weight: 500; border-bottom: 1px solid rgb(0, 0, 0); padding-bottom: 10px; color: black;"
+                        class="fs-6 fs-md-4 fs-sm-2 text-uppercase">Htoo Burger Heritage – Shwedagon View</p>
+                    <p class="">Location: No. 112, Shwedagon Pagoda Road (Near Southern Gate Entrance), Dagon Township,
+                        Yangon, Myanmar.
+                        (Directly facing the Shwedagon Pagoda) <br><br>
+                        <i>Phone: +95 9 555 666 999 (Rooftop Reservations & Events)</i>
+                    </p>
+                    <p style="color: gray;">The Rooftop Terrace: The only burger lounge in the city offering an
+                        open-air, eye-level view of the Shwedagon Pagoda’s illuminated stupa.
+
+                        Heritage Luxury: A unique design that respects local culture while delivering a 5-star
+                        international dining standard.
+
+                        Sunset Dining: The ultimate spot to watch the transition from day to night, as the golden pagoda
+                        begins to shimmer against the twilight sky.</p>
+                </div>
+            </div>
+
+            <div class="location-card  col-12 col-md-8 col-lg-6">
+                <img src="./branch 3.png" alt="" class="img-fluid"
+                    style="margin-bottom: 50px; border-radius: 20px;">
+                <div>
+                    <p style="font-weight: 500; border-bottom: 1px solid rgb(0, 0, 0); padding-bottom: 10px; color: black;"
+                        class="fs-6 fs-md-4 fs-sm-2 text-uppercase">Branch Name: Htoo Burger – Supertree Grove</p>
+                    <p class="">Location: Unit #01-01, Supertree Grove, Gardens by the Bay, 18 Marina Gardens Drive,
+                        Singapore 018953.
+                        (Nestled directly beneath the Supertrees, overlooking the Dragonfly Lake) <br><br>
+                        <i>Phone: +65 6777 8899 (VIP Pod Reservations)</i>
+                    </p>
+                    <p style="color: gray;">The Sky Lounge: The only burger restaurant in Singapore where you can dine
+                        at canopy level, surrounded by the twinkling lights of the Supertrees.
+
+                        Garden Rhapsody: Enjoy your Wagyu burger while watching the world-famous light show from the
+                        comfort of our private terrace—no crowds, just luxury.
+
+                        Futuristic Comfort: Automated table service, climate-controlled "Glass Pods," and a menu curated
+                        exclusively for the Singapore palate.</p>
+                </div>
+            </div>
+            <div class="location-card  col-12 col-md-8 col-lg-6">
+                <img src="./branch 4.png" alt="" class="img-fluid"
+                    style="margin-bottom: 50px; border-radius: 20px;">
+                <div>
+                    <p style="font-weight: 500; border-bottom: 1px solid rgb(0, 0, 0); padding-bottom: 10px; color: black;"
+                        class="fs-6 fs-md-4 fs-sm-2 text-uppercase">Htoo Burger – The River of Kings</p>
+                    <p class="">Location: Unit A1, The Deck @ Tha Tien, Maha Rat Road, Phra Borom Maha Ratchawang, Phra
+                        Nakhon, Bangkok 10200, Thailand.
+                        (Situated on the riverbank directly facing the Temple of Dawn) <br><br>
+                        <i>Phone: +66 2 555 9988 (Riverside Terrace Reservations)</i>
+                    </p>
+                    <p style="color: gray;">The Iconic View: The best seat in Bangkok to watch the sunset behind Wat
+                        Arun, the Temple of Dawn.
+
+                        Riverside Dining: Experience the romance of the Chao Phraya River from our exclusive private
+                        terrace.
+
+                        Thai Fusion Menu: Features our Bangkok-exclusive "Tom Yum Truffle Wagyu" burger—a spicy, savory
+                        masterpiece you won't find anywhere else.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <footer class="w-100 h-auto px-5 my-5"
+        style="text-align: start; height: 50vh; background-color: rgb(255, 255, 255); margin-top: 20px;">
+        <h2 style="font-family: Shawdows into Light;font-size: 20px; font-weight: 100; text-decoration: underline; text-underline-offset: 10px; color: rgb(0, 0, 0);"
+            class="py-5">THANK YOU
+            FOR CHOOSING HTOO BURGER</h2>
+        <div style="display: flex; flex-flow: column; justify-content: left; color: rgb(0, 0, 0); font-size: 15px;"
+            class="container">
+            <div class="d-flex link" style="justify-content:start; align-items: center; padding: 20px;"><i
+                    class="fa-brands fa-facebook" style="scale: calc(2); margin-right: 50px;"></i>
+                <p>www.facebook.com</p>
+            </div>
+            <div class="d-flex link" style="justify-content: start; align-items: center; padding: 20px;"><i
+                    class="fa-brands fa-instagram" style="scale: calc(2); margin-right: 50px;"></i>
+                <p>www.instagram.com</p>
+            </div>
+            <div class="d-flex link" style="justify-content: start; align-items: center; padding: 20px;"><i
+                    class="fa-brands fa-whatsapp" style="scale: calc(2); margin-right: 50px;"></i>
+                <p>www.facebook.com</p>
+            </div>
+            <div class="d-flex link" style="justify-content: start; align-items: center; padding: 20px;"><i
+                    class="fa-brands fa-line" style="scale: calc(2); margin-right: 50px;"></i>
+                <p>www.Link.com</p>
+            </div>
+            <div class="d-flex link" style="justify-content: start; align-items: center; padding: 20px;"><i
+                    class="fa-regular fa-message" style="scale: calc(2); margin-right: 50px;"></i>
+                <p>htoocustomerservice@gmai.com</p>
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
